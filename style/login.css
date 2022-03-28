@@ -1,0 +1,110 @@
+
+
+
+/* LOGIN AND SIGN UP */
+
+:root{ 
+    --color--text: #4267B2;
+    --bg--frame: #B4CECF;
+    --bg--btn: #4267B2;
+    --bg--input:#EAEAEA;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background: #eee;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+    width: 100%;
+
+}
+
+.container h2{
+    font-size: 60px;
+    color: var(--color--text);
+    font-weight: 700;
+}
+.container input{
+    padding: 12px;
+    font-size: 20px;
+}
+.container input::placeholder{
+    font-size: 20px;
+
+}
+.show{
+    width: 34px;
+    height: 34px;
+    /* position: absolute; */
+    margin-left: 330px;
+    margin-top: -40px; 
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    /* flex: auto; */
+    align-items: center;
+    cursor: pointer;
+}
+
+.show:hover{
+    background: hsl(0, 0%, 81%);
+    transition: ease-in-out .5s;
+}
+
+/* / ICON STYLE / */
+label { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 39px;
+    width: 39px;
+    margin-top: 4px;
+    margin-left: 2px;
+    position: absolute;
+    color: #aaa;
+}
+
+.confirm_contianer{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 15% auto;
+    display: none;
+}
+.flex{display: flex;}
+.confirm_contianer button{
+    font-size: 200%;
+    padding: 20px;
+    background-color: #229ef6;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-weight: bolder;
+}
+
+
+/* FORM CREATE  */
+
+.container_form_create{
+    background: rgba(0, 0, 0, 0.301);
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    opacity: 1;
+    transition: all ease-in 1s;
+}
+.form_create{
+    margin: 60px 0  ;
+} 
+
+.cancel_create{
+    display:flex;
+    float:right;
+    cursor: pointer;
+}
